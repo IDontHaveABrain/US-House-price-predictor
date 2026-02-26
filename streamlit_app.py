@@ -24,7 +24,7 @@ if st.button("Predict Detailed Price"):
     features = np.array([[
                 OverallQual, GrLivArea, TotalBsmtSF, GarageArea, GarageCars
     ]])
-    price = full_model.predict(features)
+    price = US_House_price_model.predict(features)
     price = np.exp(price)
 
     st.success(f"Estimated Price: ${price}")
