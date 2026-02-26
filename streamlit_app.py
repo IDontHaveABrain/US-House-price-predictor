@@ -1,9 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import FunctionTransformer, OneHotEncoder
-from sklearn.compose import ColumnTransformer
+import joblib
 import pydeck
 
 joblib.load("US_House_Cleaning_Pipeline.pkl")
